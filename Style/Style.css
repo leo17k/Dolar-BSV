@@ -1,0 +1,27 @@
+body{
+    background-image: url("Background_image.svg");
+    background-color: #121826;
+    font-family: "Outfit", sans-serif;
+    color: rgba(255, 255, 255, 0.74);
+    display: grid;
+    justify-content: center;
+}
+
+  .div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h2 {
+    background: #8a57ea96;
+    border-radius: 20px;
+    padding: 20px;
+}
