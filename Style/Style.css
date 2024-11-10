@@ -3,7 +3,7 @@ body{
     background-color: #121826;
     font-family: "Outfit", sans-serif;
     color: rgba(255, 255, 255, 0.74);
-    display: grid;
+   display: grid;
     justify-content: center;
 }
 
@@ -13,7 +13,7 @@ body{
     justify-content: center;
     align-items: center;
   }
-  div{
+  .div2{
     display: flex;
    
     justify-content: center;
@@ -24,4 +24,30 @@ body{
     background: #8a57ea96;
     border-radius: 20px;
     padding: 20px;
+}
+
+input{
+
+  all: unset;
+  border: solid 2px #e1e2e4b9;
+  padding: 10px;
+  border-radius: 20px;
+  width: 90%;
+}
+
+
+.calcular{
+
+   background: #121826a9;
+   border-radius: 20px;
+ 
+}
+
+#btn{
+  all:unset ;
+  background: #123588b9;
+  border-radius: 20px;
+  padding: 10px;
+  width: 60%;
+  text-align: center;
 }
