@@ -7,18 +7,32 @@ fetch("https://ve.dolarapi.com/v1/dolares/oficial")
 
     let text = document.querySelector('.dolar');  
     text.textContent = Dolar;  
-
+    let SS = document.getElementById('ss'); 
+    const op = document.getElementById('Tranformar');  
     let xd = document.getElementById("BS");  
     let btn = document.getElementById("btn");  
     let h2 = document.getElementById("h2");  
 
     btn.addEventListener("click", () => {  
-      let Cantidad = parseFloat(xd.value); 
-      let resultado = calcular(Dolar, Cantidad); 
-      h2.textContent = resultado.toFixed(2) +' BS'; 
-    });  
+      const seltOP = op.value;
 
-    function calcular(Dolar, Cantidad) {  
+      if (seltOP === "$$ a BS") {  
+        let Cantidad = parseFloat(xd.value); 
+        let resultado = bsa$$(Dolar, Cantidad); 
+        h2.textContent = resultado.toFixed(2) +' BS'; 
+  
+    } else if (seltOP === "BS a $$") {  
+      let Cantidad = parseFloat(SS.value); 
+      let resultado = $$abs(Dolar, Cantidad); 
+      h2.textContent = resultado.toFixed(2) +' $$'; 
+
+   }});  
+
+    function $$abs(Dolar, Cantidad) {  
+      return Cantidad / Dolar;  
+    }  
+
+    function bsa$$(Dolar, Cantidad) {  
       return Cantidad * Dolar;  
     }  
 
