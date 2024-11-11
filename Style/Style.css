@@ -27,12 +27,13 @@ body{
 }
 
 input{
-
+  
   all: unset;
   border: solid 2px #e1e2e4b9;
   padding: 10px;
   border-radius: 20px;
   width: 90%;
+  
 }
 
 
@@ -40,6 +41,7 @@ input{
 
    background: #121826a9;
    border-radius: 20px;
+   
  
 }
 
@@ -51,3 +53,40 @@ input{
   width: 60%;
   text-align: center;
 }
+
+
+#ss{
+  display: none;
+
+}
+
+#Tranformar {  
+  background: none; /* Sin fondo */  
+  border-bottom: 2px solid rgba(255, 255, 255, 0.76); /* Borde inferior de 2px sólido y blanco */  
+  border-top:none; /* Borde superior de 3px sólido (deberías especificar el color) */  
+  border-left: none; /* Borde izquierdo de 3px sólido (deberías especificar el color) */  
+  border-right: none; /* Borde derecho de 3px sólido (deberías especificar el color) */  
+  font-size: 1.5em; /* Tamaño de fuente */  
+  font-weight: bold; /* Texto en negrita */  
+  line-height: 1.2; /* Altura de línea */  
+  margin: 0.67em 0; /* Márgenes superior e inferior */  
+  color: inherit; /* Hereda el color del texto del elemento padre */  
+}
+#Tranformar:focus{
+  border-bottom: 2px solid rgb(84, 30, 170);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  transition: 1s;
+  outline: none;
+  
+}
+#Tranformar-items{
+  background: black;
+  padding: 20px;
+}
+
+option{
+  color: #121826;
+}
+
