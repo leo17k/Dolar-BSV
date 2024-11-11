@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BCV Api</title>
+    <title>App de compras</title>
     <link rel="stylesheet" href="Style/Style.css">
 </head>
 <body>
@@ -14,31 +14,38 @@
 <div class="div">
 
 
- <h2 class="h2">Hora de actualización</h2>
+ <h2 class="h2">Hora de actualizacion</h2>
  <h3 id="fechaDolar"></h3>
 
 </div>   
 
 <div class="calcular">
+    <div class="div2" style="gap: 10px;">  
+        <h1>Transformar</h1>  
+        <select id="Tranformar">  
+            <option value="BS a $$">BS a $$</option>  
+            <option value="$$ a BS">$$ a BS</option>  
+        </select>  
+    </div>  
 
-<div class="div2"><h1>Transformar $$ a BS</h1></div>
-    
+    <div style="display: block; width: 100%;">  
+        <input id="BS" type="number" placeholder="Dólares" style="display: none;">  
+        <input id="ss" type="number" placeholder="Bolívares" style="display: block;">  
+    </div>  
 
-    <div  style="display: block; width: 100%;" >
-      
-        <input id="BS" type="number" placeholder="BS">
+    <div class="div2" style="margin-top: 20px;">  
+        <button id="btn">Calcular...</button>  
+    </div>  
 
-        
-    </div>
-
- <div class="div2" style="margin-top: 20px;">   <button id="btn">Calcular...</button></div>
-
-  <div class="div2"><h2 id="h2"></h2></div>
+    <div class="div2">  
+        <h2 id="h2"></h2>  
+    </div>  
 
 </div>
 
 
  <script src="Code/Apidolar.js"></script>
+ <script src="Code/Script.js"></script>
 
 </body>
 </html>
