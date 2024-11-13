@@ -3,15 +3,17 @@ fetch("https://ve.dolarapi.com/v1/dolares/oficial")
   .then(data => {  
     let arrayData = Object.values(data);  
     let Dolar = arrayData[4];
-    console.log(Dolar);  
+     
 
     let text = document.querySelector('.dolar');  
-    text.textContent = Dolar;  
     let SS = document.getElementById('ss'); 
     const op = document.getElementById('Tranformar');  
     let xd = document.getElementById("BS");  
     let btn = document.getElementById("btn");  
     let h2 = document.getElementById("h2");  
+
+    text.textContent = Dolar.toFixed(3);  
+    console.log("Valor del dolar al BCV: ",Dolar); 
 
     btn.addEventListener("click", () => {  
       const seltOP = op.value;
@@ -37,6 +39,7 @@ fetch("https://ve.dolarapi.com/v1/dolares/oficial")
     }  
 
   })  
+  
   .catch(error => console.log('sin conexión'));
 
 const fechaUTC = new Date("2024-11-07T20:00:33.708Z");  
@@ -50,8 +53,9 @@ const fechaFormatoVenezuela = fechaVenezuela.toLocaleDateString('es-VE', opcione
 const opcionesHora = { hour: '2-digit', minute: '2-digit',  };  
 const horaVenezuela = fechaVenezuela.toLocaleTimeString('es-VE', opcionesHora);  
 
-console.log(horaVenezuela);
-console.log(fechaFormatoVenezuela);
+console.log("Hora de actualizacion:",horaVenezuela);
+console.log("Fecha de Actualizacion",fechaFormatoVenezuela);
+
 
 
 let fechaDolar = document.getElementById('fechaDolar');
